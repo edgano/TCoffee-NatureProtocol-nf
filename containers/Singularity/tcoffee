@@ -46,7 +46,7 @@ MAINTAINER Edgar Garriga
 # install kalign
 ##
   wget http://msa.sbc.su.se/downloads/kalign/current.tar.gz
-  tar xfvz current.tar.gz
+  tar -zxf current.tar.gz
   mv current kalign
   cd kalign
   ./configure
