@@ -43,6 +43,17 @@ MAINTAINER Edgar Garriga
   cd /
 
 ##
+# install kalign
+##
+  wget http://msa.sbc.su.se/downloads/kalign/current.tar.gz
+  tar xfvz current.tar.gz
+  mv current kalign
+  cd kalign
+  ./configure
+  make install
+  rm /current.tar.gz
+  cd /
+##
 # install mafft
 ##
   wget http://mafft.cbrc.jp/alignment/software/mafft-7.310-with-extensions-src.tgz
