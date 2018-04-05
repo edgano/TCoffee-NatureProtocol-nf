@@ -26,9 +26,9 @@ MAINTAINER Edgar Garriga
   cd kalign
   ./configure
   make install
-  echo 'export PATH=$PATH:~/kalign' >>$SINGULARITY_ENVIRONMENT
-  #cd /
-  #cp -R /kalign/* /usr/bin
+  #echo 'export PATH=$PATH:/kalign' >>$SINGULARITY_ENVIRONMENT
+  cd /
+  cp -R ./kalign/* /usr/bin
   rm /current.tar.gz
   cd /
 
