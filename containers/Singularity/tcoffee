@@ -19,6 +19,17 @@ MAINTAINER Edgar Garriga
 
 
 ##
+# install kalign
+##
+  wget http://msa.sbc.su.se/downloads/kalign/current.tar.gz
+  mkdir kalign && tar -zxf current.tar.gz -C /kalign
+  cd kalign
+  ./configure
+  export "PATH=$PATH:/kalign"
+  rm /current.tar.gz
+  cd /
+
+##
 # install argtable
 ##
   wget http://prdownloads.sourceforge.net/argtable/argtable2-13.tar.gz
@@ -42,17 +53,6 @@ MAINTAINER Edgar Garriga
   rm /clustal-omega-1.2.4.tar.gz
   cd /
 
-##
-# install kalign
-##
-  wget http://msa.sbc.su.se/downloads/kalign/current.tar.gz
-  mkdir kalign && tar -zxf current.tar.gz -C /kalign/
-  cd kalign
-  ./configure
-  make install
-  cd ..
-  rm current.tar.gz
-  cd /
 ##
 # install mafft
 ##
