@@ -25,7 +25,8 @@ MAINTAINER Edgar Garriga
   mkdir kalign && tar -zxf current.tar.gz -C /kalign
   cd kalign
   ./configure
-  echo 'export PATH=$PATH:/kalign' >>$SINGULARITY_ENVIRONMENT
+  #echo 'export PATH=$PATH:/kalign' >>$SINGULARITY_ENVIRONMENT
+  cp -R kalign/* /usr/bin
   rm /current.tar.gz
   cd /
 
