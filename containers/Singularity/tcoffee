@@ -41,7 +41,17 @@ MAINTAINER Edgar Garriga
   echo 'export PATH=$PATH:/muscle3.8.31/src' >>$SINGULARITY_ENVIRONMENT
   cd /
   
-  ##
+##
+# install ClustalW
+##
+   wget http://www.clustal.org/download/current/clustalw-2.1.tar.gz
+   tar -zxf clustalw-2.1.tar.gz
+   rm clustalw-2.1.tar.gz
+   cd clustalw-2.1
+   ./configure
+   make
+   echo 'export PATH=$PATH:/clustalw-2.1/src' >>$SINGULARITY_ENVIRONMENT
+
 # install argtable
 ##
   wget http://prdownloads.sourceforge.net/argtable/argtable2-13.tar.gz
